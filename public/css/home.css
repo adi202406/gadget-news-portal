@@ -1,0 +1,38 @@
+.container-text {
+    display: flex;
+    flex-direction: column; /* Membuat Flexbox dalam arah vertikal */
+    justify-content: center; /* Menempatkan di tengah secara vertikal */
+    align-items: center; /* Menempatkan di tengah secara horizontal */
+    height: 87.6vh; /* Menggunakan 100% tinggi viewport */
+    text-align: center; /* Memastikan teks terpusat */
+    background: linear-gradient(to bottom, #e03444, #3498db);
+  }
+  
+.centered-text {
+    text-align: center; /* Hanya jika Anda ingin teks juga di tengah secara horizontal di dalam elemen */
+    font-size: 4em;
+    font-family: "Protest Guerrilla", sans-serif;
+    background-image: url('/img/gambar-text3.jpg');
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(10px 10px 10px rgba(89, 236, 238,0.5));
+}
+
+p{
+    font-family: "Bebas Neue", sans-serif;
+    color: antiquewhite;
+    letter-spacing: 2px;
+    filter: drop-shadow(10px 10px 10px rgba(24, 193, 193, 0.5));
+    margin-top: -20px;
+}
+a.navbar-brand{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 2em;
+    background-image: url('/img/gambar-text.jpg');
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(10px 10px 10px rgba(165, 102, 98, 0.5));
+    background-position-x:-10px ;
+}
