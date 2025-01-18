@@ -16,7 +16,7 @@
                             alt="{{ $hp->category->name }}"> --}}
                         </div>
                         @else
-                        <img src="https://source.unsplash.com/1200x400?/smartphone" class="card-img-top"
+                        <img src="https://placehold.co/1200x400?text={{ $hp->title }}" class="card-img-top"
                             alt="{{ $hp->title }}">
                         @endif
 

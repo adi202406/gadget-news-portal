@@ -11,15 +11,15 @@
                 <p>By. <a href="/blog?author={{ $post->author->username }}">{{ $post->author->name }}</a> | <a
                         href="/blog?category={{ $post->category->slug }}">{{ $post->category->name }}</a></p>
 
-                @if ($post->image)
-                    <div style="max-height: 400px; overflow: hidden;">
-                        <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top"
+                        @if ($post->image)
+                        <div style="max-height: 400px; overflow: hidden;">
+                            <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top"
+                                alt="{{ $post->category->name }}">
+                        </div>
+                    @else
+                        <img src="https://placehold.co/1200x400?text={{ $post->category->name }}" class="card-img-top"
                             alt="{{ $post->category->name }}">
-                    </div>
-                @else
-                    <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" class="card-img-top"
-                        alt="{{ $post->category->name }}">
-                @endif
+                    @endif
 
                 <article class="my-3 fs-5">
                     {!! $post->body !!}

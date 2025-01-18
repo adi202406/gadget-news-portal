@@ -30,7 +30,7 @@
                         <img src="{{ asset('storage/' . $posts[0]->image) }}" class="card-img-top" alt="{{ $posts[0]->category->name }}">
                     </div>
                 @else
-                    <img src="https://source.unsplash.com/1200x400?{{ $posts[0]->category->name }}" class="card-img-top" alt="{{ $posts[0]->category->name }}">
+                <img src="https://placehold.co/1200x400?text={{ $posts[0]->category->name }}" class="card-img-top" alt="{{ $posts[0]->category->name }}">
                 @endif
                 <div class="card-body text-center">
                     <h3 class="card-title">
@@ -82,8 +82,8 @@
                                 </a>
                             @else
                                 <a href="/posts/{{ $post->slug }}">
-                                    <img src="https://source.unsplash.com/500x400?{{ $post->category->name }}"
-                                         class="card-img-top" alt="{{ $post->category->name }}">
+                                    <img src="https://placehold.co/500x400?text={{ $post->category->name }}" class="card-img-top"
+                                    alt="{{ $post->category->name }}">
                                 </a>
                             @endif
     

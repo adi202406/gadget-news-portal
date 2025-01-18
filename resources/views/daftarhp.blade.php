@@ -39,7 +39,7 @@
                                 </a>
                             @else
                                 <a href="/hp/{{ $hp->slug }}">
-                                    <img src="https://source.unsplash.com/500x400?/smartphone" class="card-img-top"
+                                    <img src="https://placehold.co/500x400?text={{ $hp->title }}" class="card-img-top"
                                         alt="{{ $hp->title }}">
                                 </a>
                             @endif
